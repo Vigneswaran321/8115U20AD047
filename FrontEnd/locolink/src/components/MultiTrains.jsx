@@ -19,20 +19,20 @@ function Trains() {
 
   return (
     <div style={{ padding: '20px', maxWidth: '1000px', margin: 'auto' }}>
-      <Typography variant="h4" component="h1" align="center" gutterBottom style={{ color: '#F26C24' }}>
+      <Typography variant="h4" component="h1" align="center" gutterBottom style={{ color: '#000000' }}>
         Trains Schedule
       </Typography>
       <TableContainer component={Paper} style={{ backgroundColor: '#FFFFFF' }}>
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell style={{ color: '#FFFFFF', backgroundColor: '#e8071a' }}>Train Name</TableCell>
-              <TableCell align="right" style={{ color: '#FFFFFF', backgroundColor: '#e8071a' }}>Train Number</TableCell>
-              <TableCell align="right" style={{ color: '#FFFFFF', backgroundColor: '#e8071a' }}>Departure Time</TableCell>
-              <TableCell align="right" style={{ color: '#FFFFFF', backgroundColor: '#e8071a' }}>Seats Available</TableCell>
-              <TableCell align="right" style={{ color: '#FFFFFF', backgroundColor: '#e8071a' }}>Price (Sleeper)</TableCell>
-              <TableCell align="right" style={{ color: '#FFFFFF', backgroundColor: '#e8071a' }}>Price (AC)</TableCell>
-              <TableCell align="center" style={{ color: '#FFFFFF', backgroundColor: '#e8071a' }}>Show more</TableCell>
+              <TableCell style={{ color: '#FFFFFF', backgroundColor: '#075be3' }}>Train Name</TableCell>
+              <TableCell align="right" style={{ color: '#FFFFFF', backgroundColor: '#075be3' }}>Train Number</TableCell>
+              <TableCell align="right" style={{ color: '#FFFFFF', backgroundColor: '#075be3' }}>Departure Time</TableCell>
+              <TableCell align="right" style={{ color: '#FFFFFF', backgroundColor: '#075be3' }}>Seats Available</TableCell>
+              <TableCell align="right" style={{ color: '#FFFFFF', backgroundColor: '#075be3' }}>Price (Sleeper)</TableCell>
+              <TableCell align="right" style={{ color: '#FFFFFF', backgroundColor: '#075be3' }}>Price (AC)</TableCell>
+              <TableCell align="center" style={{ color: '#FFFFFF', backgroundColor: '#075be3' }}>Show more</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -50,7 +50,7 @@ function Trains() {
                     to={`/trains/${train.trainNumber}`}
                     variant="contained"
                     color="primary"
-                    style={{ backgroundColor: '#16f20f' }}
+                    style={{ backgroundColor: '#fc3314' }}
                   >
                     Show more
                   </Button>
