@@ -1,4 +1,3 @@
-// SingleTrain.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
@@ -11,7 +10,7 @@ function SingleTrain() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/api/trains/${trainId}?token=YOUR_AUTH_TOKEN`)
+      .get(`http://localhost:5000/api/trains/${trainId}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTY1NzgyMDQsImNvbXBhbnlOYW1lIjoiTG9jb0xpbmsiLCJjbGllbnRJRCI6IjEzZDM0NTc0LTI1MzUtNGY0OC1iOTA0LWI5NjVkM2YyYjNiMSIsIm93bmVyTmFtZSI6IiIsIm93bmVyRW1haWwiOiIiLCJyb2xsTm8iOiI4MTE1VTIwQUQwNDcifQ.NUv-4xAN04M9R_TEY0ZOgdCRSXCQx8s9JvYeq1TPVYA`)
       .then((response) => {
         setTrain(response.data.data);
       })
